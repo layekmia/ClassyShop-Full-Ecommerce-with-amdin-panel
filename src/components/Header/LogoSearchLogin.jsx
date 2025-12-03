@@ -4,21 +4,15 @@ import Image from "next/image";
 import SearchInput from "./SearchInput";
 import IconButton from "./IconButtons";
 import { Heart, ShoppingCart } from "lucide-react";
+import Logo from "../Logo";
 
 export default function LogoSearchLogin() {
   return (
-    <div className="py-3">
+    <div className="py-4 border-b border-b-black/10">
       <Wrapper className="flex items-center justify-between">
         {/* Logo  */}
         <div className="col1 w-1/4">
-          <Link href="/">
-            <Image
-              src="/logo.jpg"
-              alt="classy_shop_logo"
-              width={200}
-              height={40}
-            />
-          </Link>
+          <Logo />
         </div>
         {/* Search Bar */}
         <div className="col2 w-[45%]">
@@ -44,10 +38,10 @@ export default function LogoSearchLogin() {
             </Link>
           </div>
           <div className="flex gap-2">
-            <IconButton tooltip="Whitelist" count={2} path="/my-whitelist">
+            <IconButton tooltip="Whitelist" count={2} path="whitelist">
               <Heart />
             </IconButton>
-            <IconButton tooltip="Cart" count={1} path="my-cart">
+            <IconButton tooltip="Cart" count={1} path="cart">
               <ShoppingCart />
             </IconButton>
           </div>

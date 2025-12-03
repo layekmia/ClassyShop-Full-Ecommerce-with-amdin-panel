@@ -7,11 +7,11 @@ export default function SearchInput() {
       <input
         type="text"
         placeholder="Search for products..."
-        className="placeholder:text-[#6b6b6b] w-full h-full bg-inherit px-4 py-2 text-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-colors duration-300"
+        className="placeholder:text-[#6b6b6b] w-full h-full bg-inherit px-4 py-2 text-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-primaryClr focus:border-primaryClr transition-colors duration-300"
       />
 
       <Button
-        className="absolute right-1 top-1/2 -translate-y-1/2 bg-[#FF5252] hover:bg-[#e04848] text-white rounded-full p-2 flex items-center justify-center transition-colors duration-200 cursor-pointer"
+        className="absolute right-1 top-1/2 -translate-y-1/2 bg-primaryClr hover:bg-[#e04848] text-white rounded-full p-2 flex items-center justify-center transition-colors duration-200 cursor-pointer"
         aria-label="Search"
       >
         <Search size={16} />

@@ -5,7 +5,7 @@ import Navigation from "./Navigation";
 
 export default function Header() {
   return (
-    <header>
+    <header className="bg-white">
       <div className="top-strip py-2.5 border-t border-t-black/10 border-b border-b-black/10">
         <Wrapper>
           <div className="flex items-center justify-between">
@@ -19,7 +19,7 @@ export default function Header() {
               <ul className="flex items-center gap-4 text-sm font-medium text-gray-800 ">
                 <li>
                   <Link
-                    className="transition-colors hover:text-primary"
+                    className="transition-colors hover:text-primaryClr"
                     href="/help-center"
                   >
                     Help Center
@@ -27,7 +27,7 @@ export default function Header() {
                 </li>
                 <li>
                   <Link
-                    className="transition-colors hover:text-primary"
+                    className="transition-colors hover:text-primaryClr"
                     href="/track-orders"
                   >
                     Oder tracking
