@@ -44,6 +44,16 @@
   fill: white !important;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff5252;
+}
+::-webkit-scrollbar-track {
+  background: #fff;
+}
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
