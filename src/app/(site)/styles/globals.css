@@ -4,8 +4,46 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-primaryClr: #FF5252
+  --color-primaryClr: #ff5252;
 }
+/* Base button styles */
+.swiper-button-prev,
+.swiper-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  z-index: 50 !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Base SVG styles */
+.swiper-button-prev .swiper-navigation-icon,
+.swiper-button-next .swiper-navigation-icon {
+  width: 20px !important;
+  height: 20px !important;
+  color: black !important;
+  fill: black !important;
+  transition: color 0.2s ease-in-out, fill 0.2s ease-in-out;
+}
+
+/* Hover BACKGROUND */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #ff5252 !important;
+}
+
+/* Hover SVG ICON COLOR → White */
+.swiper-button-prev:hover .swiper-navigation-icon,
+.swiper-button-next:hover .swiper-navigation-icon {
+  color: white !important;
+  fill: white !important;
+}
+
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);

@@ -1,5 +1,9 @@
+import Hero from "@/components/home/Hero";
+
 export default function Home() {
   return (
-    <div>Classy Shop </div>
-  )
+    <div className="w-full">
+      <Hero />
+    </div>
+  );
 }
